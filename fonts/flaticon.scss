@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?f844f97613cae2d62d013c501c499450") format("truetype"),
+url("./flaticon.woff?f844f97613cae2d62d013c501c499450") format("woff"),
+url("./flaticon.woff2?f844f97613cae2d62d013c501c499450") format("woff2"),
+url("./flaticon.eot?f844f97613cae2d62d013c501c499450#iefix") format("embedded-opentype"),
+url("./flaticon.svg?f844f97613cae2d62d013c501c499450#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "cake": "\f101",
+    "cake-slice": "\f102",
+    "recipes": "\f103",
+    "cup-cake": "\f104",
+    "cookie": "\f105",
+    "truck": "\f106",
+);
+
+.flaticon-cake:before {
+    content: map-get($flaticon-map, "cake");
+}
+.flaticon-cake-slice:before {
+    content: map-get($flaticon-map, "cake-slice");
+}
+.flaticon-recipes:before {
+    content: map-get($flaticon-map, "recipes");
+}
+.flaticon-cup-cake:before {
+    content: map-get($flaticon-map, "cup-cake");
+}
+.flaticon-cookie:before {
+    content: map-get($flaticon-map, "cookie");
+}
+.flaticon-truck:before {
+    content: map-get($flaticon-map, "truck");
+}
