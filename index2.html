@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake House</title>
     <link rel="stylesheet" href="./css/flaticon.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -19,11 +19,11 @@
                 return false;
             })
             $(".chefs").click(function(){
-                $("html, body").animate({scrollTop : $("#our_chefs").offset().top - 60}, 600)
+                $("html, body").animate({scrollTop : $("#chefs").offset().top - 60}, 600)
                 return false;
             })
             $(".contact").click(function(){
-                $("html, body").animate({scrollTop : $("#footer").offset().top}, 600)
+                $("html, body").animate({scrollTop : $("#contact").offset().top - 60}, 600)
                 return false;
             })
 
@@ -293,9 +293,9 @@
 </div>
 
 
-<div id="our_chefs">
+<div id="chefs">
     <div class="wrap">
-        <div class="left">
+        <div class="title">
             <h2>Our Chefs</h2>
             <p>Pastry chefs specialise in making 
                 pastries, desserts, breads and other 
@@ -304,96 +304,114 @@
                 growing list of famous pastry chefs 
                 from around the world.</p>
         </div>
-        <div class="right">
+        <div class="cont">
             <div class="box">
-                <div></div>
-                <h4>Smith. G</h4>
-                <p>Smith. G skills as a pastry chef helped 
-                    him create a line of successful shops.</p>
+                <div class="img_part"></div>
+                <div class="text_part">
+                    <h4>Smith. G</h4>
+                    <p>Smith. G skills as a pastry chef helped 
+                        him create a line of successful shops.</p>
+                </div>
             </div>
             <div class="box">
-                <div></div>
-                <h4>Elizabeth Falkner</h4>
-                <p>Elizabeth Falkner is a pastry chef, chef, 
-                    author, TV personality, artist and culinary 
-                    instigator.</p>
+                <div class="img_part"></div>
+                <div class="text_part">
+                    <h4>Smith. G</h4>
+                    <p>Smith. G skills as a pastry chef helped 
+                        him create a line of successful shops.</p>
+                </div>
             </div>
             <div class="box">
-                <div></div>
-                <h4>Duff Goldman</h4>
-                <p>You might have seen Duff Goldman on 
-                    the reality TV show Ace of Cakes which 
-                    features his Charm City Cakes shop.</p>
+                <div class="img_part"></div>
+                <div class="text_part">
+                    <h4>Smith. G</h4>
+                    <p>Smith. G skills as a pastry chef helped 
+                        him create a line of successful shops.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div id="map">
-    <div class="wrap">
-        <div class="box">
-            <div class="cont">
+<div id="contact"><!--position: relative;-->
+    <div id="map" class="map_space"></div>
+    <div class="total_space"><!--position: absolute;-->
+        <div class="wrap">
+            <div class="contact_box">
                 <h2>Contact Us</h2>
                 <p>Our Company is the best, meet the 
-                    creative team that never sleeps. Say 
-                    something to us we will answer to you.
+                creative team that never sleeps. Say 
+                something to us we will answer to you.
                 </p>
-                <div class="input">
-                    <div class="input_line">
-                        <input type="text" placeholder="NAME">
-                    </div>
-                    <div class="input_line">
-                        <input type="email" placeholder="EMAIL">
-                    </div>
-                    <div class="input_line">
-                        <input type="text" placeholder="PHONE NUMBER">
-                    </div>
-                    <div class="input_line">
-                        <input type="text" placeholder="YOUR MESSAGE">
-                    </div>
-                </div>
-                <div class="btn">
-                    <input type="button" value="SEND MESSAGE">
-                </div>
+                <div class="input_form">
+                    <form action="" method="post">
+                        <div class="input_line">
+                            <input type="text" name="name" placeholder="NAME" required>
+                        </div>
+                        <div class="input_line">
+                            <input type="email" name="email"placeholder="EMAIL" required>
+                        </div>
+                        <div class="input_line">
+                            <input type="text" name="phone"placeholder="PHONE NUMBER" required>
+                        </div>
+                        <div class="input_line">
+                            <input type="text" name="message"placeholder="YOUR MESSAGE" required>
+                        </div>
+                        <div class="sendbtn">
+                            <!-- <input type="submit" value="SEND MESSAGE"> -->
+                            <button type="submit">SEND MESSAGE</button>
+                        </div>
+                    </form>
             </div>
-        </div>
-    </div>
-</div>
-
-<div id="footer_info">
-    <div class="wrap">
-        <div class="box">
-            <img src="./img/footer_logo.png" alt="cakecious logo">
-            <p>We also make cupcakes, eclairs, 
-                profiteroles, scones, slices and many 
-                other sweet delicacie</p>
-        </div>
-        <div class="box">
-            <h4>Quick links</h4>
-            <a href="#">Your Account</a>
-            <a href="#">View Order</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditionis</a>
-        </div>
-        <div class="box">
-            <h4>Work Times</h4>
-            <p>Mon. : Thu.: 8 am - 8 pm</p>
-            <p>Fri. : 8 am - 8 pm</p>
-            <p>Sat. : 9am - 4pm</p>
-            <p>Sun. : Closed</p>
-        </div>
-        <div class="box">
-            <h4>Contact Info</h4>
-            <a href="tel:(1800) 574 9687">(1800) 574 9687</a>
-            <p>Cakecious Store</p>
-            <address>256, baker Street, New York, 5245</address>
-            <a href="mailto:akeciousdemo@email.com">cakeciousdemo@email.com</a>
         </div>
     </div>
 </div>
 
 <div id="footer">
-    <h5>Cakecious © 2021 All Rights Reserved.</h5>
+    <div class="top_space">
+        <div class="wrap">
+            <div class="title">
+                <img src="./img/footer_logo.png" alt="">
+                <p>We also make cupcakes, eclairs, 
+                    profiteroles, scones, slices and many 
+                    other sweet delicacie</p>
+            </div>
+            <div class="cont">
+                <ul>
+                    <li>
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="">Your Account</a></li>
+                            <li><a href="">View Order</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Work Times</h4>
+                        <ul>
+                            <li><p>Mon. : Thu.: 8 am - 8 pm</p></li>
+                            <li><p>Fri. : 8 am - 8 pm</p></li>
+                            <li><p>Sat. : 9am - 4pm</p></li>
+                            <li><p>Sun. : Closed</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><p class="f_bold">(1800) 574 9687</p></li>
+                            <li><p>Cakecious Store</p></li>
+                            <li><p>256, baker Street, New York, 5245</p></li>
+                            <li><p class="f_bold">cakeciousdemo@email.com</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_space">
+        <p>Cakecious © 2021 All Rights Reserved.</p>
+    </div>
 </div>
 
 
